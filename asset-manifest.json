@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cv-project/static/css/main.21e7ce2e.css",
+    "main.js": "/cv-project/static/js/main.955e04b9.js",
+    "static/js/488.cbc7ae40.chunk.js": "/cv-project/static/js/488.cbc7ae40.chunk.js",
+    "static/media/Projects.png": "/cv-project/static/media/Projects.51c35e39831b28cd6bd4.png",
+    "static/media/Certifications.png": "/cv-project/static/media/Certifications.a8fd5d99a04f79a1a0ff.png",
+    "static/media/Skills.png": "/cv-project/static/media/Skills.ebb3a6dd465e118f49ee.png",
+    "static/media/Languages.png": "/cv-project/static/media/Languages.1454cb61ad287c19d595.png",
+    "static/media/Email.png": "/cv-project/static/media/Email.50b2a3de3f1b40faecf9.png",
+    "static/media/GitHub.png": "/cv-project/static/media/GitHub.bd1c7029ae41d2d81895.png",
+    "static/media/WhatsApp.png": "/cv-project/static/media/WhatsApp.9d0f9de6b479b3d8761f.png",
+    "static/media/Experience.png": "/cv-project/static/media/Experience.08fa60b036e71b4e82ff.png",
+    "static/media/Phone.png": "/cv-project/static/media/Phone.eab3d113c1de9883afc4.png",
+    "static/media/Education.png": "/cv-project/static/media/Education.ef3e6ad6663560ef1ba3.png",
+    "static/media/LinkGroup.png": "/cv-project/static/media/LinkGroup.4f7601db8a94d8ad7930.png",
+    "static/media/LinkedIn.png": "/cv-project/static/media/LinkedIn.9a1a7f8162140e296345.png",
+    "index.html": "/cv-project/index.html",
+    "main.21e7ce2e.css.map": "/cv-project/static/css/main.21e7ce2e.css.map",
+    "main.955e04b9.js.map": "/cv-project/static/js/main.955e04b9.js.map",
+    "488.cbc7ae40.chunk.js.map": "/cv-project/static/js/488.cbc7ae40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21e7ce2e.css",
+    "static/js/main.955e04b9.js"
+  ]
+}
