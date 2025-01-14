@@ -192,6 +192,7 @@ html, body {
   transform: scale(1.3);
 }
 
+
 /* Media Queries pentru ecrane mici (sub 768px) */
 @media (max-width: 768px) {
   .main-content {
@@ -237,27 +238,6 @@ html, body {
   }
 }
 
-/* Media Queries pentru telefoane foarte mici (sub 480px) */
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 20px;
-  }
-
-  .social-links img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .tabs button {
-    width: 70px;
-    height: 70px;
-    margin: 5px auto;
-  }
-
-  .tabs button::after {
-    font-size: 12px;
-  }
-}
 
 @media (min-width: 1024px) {
   /* Stile pentru ecranele mari (desktop) */
