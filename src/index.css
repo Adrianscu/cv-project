@@ -192,7 +192,6 @@ html, body {
   transform: scale(1.3);
 }
 
-
 /* Media Queries pentru ecrane mici (sub 768px) */
 @media (max-width: 768px) {
   .main-content {
@@ -237,6 +236,64 @@ html, body {
     padding: 10px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1360px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    padding: 30px;
+  }
+
+  .tabs {
+    position: static;
+    width: 230px;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .tabs button {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 20px;
+    margin-left: 230px;
+  }
+}
+
+/* Media Queries pentru rezoluție mare (1920x1080 și 2560x1080) */
+@media (min-width: 1361px) and (max-width: 1920px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    padding: 50px;
+  }
+
+  .tabs {
+    position: static;
+    width: 250px;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .tabs button {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 30px;
+    margin-left: 250px;
+  }
+}
+
 
 
 @media (min-width: 1024px) {
