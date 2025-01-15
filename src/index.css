@@ -225,7 +225,10 @@ body {
 @media (max-width: 768px) {
   
   .header {
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Ajustează padding-ul dacă este necesar */
     transition: top 0.3s ease-in-out; /* Smooth hide/show transition */
   }
 
@@ -236,6 +239,7 @@ body {
 
   .header h1 {
     font-size: 24px;
+    margin: 0; /* Elimină eventuale margini */
   }
   
   .content {
@@ -269,18 +273,19 @@ body {
     font-size: 12px;
   }
 
+  .footer {
+    justify-content: center;
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+
   .footer .contact-and-social .contact-list {
     flex-direction: row; /* Menținem butoanele pe orizontală */
     justify-content: space-evenly; /* Distribuim uniform butoanele pe orizontală */
     gap: 15px; /* Spațiu mai mic între butoane */
-  
-  }
-
-  .footer {
-    padding: 5px 5px;
-    font-size: 12px;
   }
 }
+
 
 @media (min-width: 769px) and (max-width: 1360px) {
   .main-content {
