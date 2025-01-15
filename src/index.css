@@ -243,6 +243,11 @@ body {
     margin: 0; /* Elimină eventuale margini */
   }
   
+  h1 {
+    font-size: 14px;
+    text-align: center;
+  }
+
   .content {
     width: 100%;
     padding: 0 5px; /* Marginea conținutului aproape de marginea superioară */
@@ -260,7 +265,7 @@ body {
 
   .section {
     font-size: 1.3rem;
-    padding: 0px; /* Redu padding-ul de sus */
+    padding: 0px !important; /* Redu padding-ul de sus */
 }
 
   .tabs {
