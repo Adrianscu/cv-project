@@ -292,7 +292,7 @@ body {
     flex: 1; /* Face ca .content să se extindă pentru a ocupa spațiul rămas */
     width: 90%; /* Ajustăm dimensiunea pentru a ocupa mai mult spațiu */
     padding: 10px 20px; /* Marginea conținutului pentru lizibilitate */
-    margin: -50px auto; /* Centrare automată */
+    margin: -100px auto; /* Centrare automată */
     font-size: 12px; /* Font mai mare */
     line-height: 1.3; /* Creștem spațierea pentru lizibilitate */
   }
