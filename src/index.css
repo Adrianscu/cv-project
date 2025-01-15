@@ -229,6 +229,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5px; /* Ajustează padding-ul dacă este necesar */
+    margin-top: 0; /* Conținutul aproape de marginea de sus */
     transition: top 0.3s ease-in-out; /* Smooth hide/show transition */
   }
 
@@ -244,15 +245,16 @@ body {
   
   .content {
     width: 100%;
-    padding: 5px; /* Ajustăm padding-ul */
-    margin-bottom: 0; /* Eliminăm margin-ul de jos */
+    padding: 0 5px; /* Marginea conținutului aproape de marginea superioară */
+    margin: 0; /* Eliminăm marginile */
+    font-size: 14px; /* Text mai mic */
   }
 
   
   .main-content {
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px;
   }
 
   .tabs {
@@ -260,29 +262,30 @@ body {
     width: 100%;
     max-height: none;
     overflow: visible;
-    padding: 10px;
+    padding: 5px;
     flex-direction: row; /* Tab-urile rămân pe orizontală */
     justify-content: space-evenly; /* Aliniem tab-urile orizontal, dar cu spațiu între ele */
   }
 
   /* General adjustments */
   .tabs button {
-    width: 48px;
-    height: 48px;
-    padding: 5px;
-    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    font-size: 10px;
   }
 
   .footer {
     justify-content: center;
     padding: 5px 5px;
     font-size: 12px;
+    margin-top: 0; /* Aproape de marginea de jos */
   }
 
   .footer .contact-and-social .contact-list {
     flex-direction: row; /* Menținem butoanele pe orizontală */
     justify-content: space-evenly; /* Distribuim uniform butoanele pe orizontală */
-    gap: 15px; /* Spațiu mai mic între butoane */
+    gap: 10px; /* Spațiu mai mic între butoane */
   }
 }
 
