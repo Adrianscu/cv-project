@@ -1,6 +1,5 @@
 ::-webkit-scrollbar {
-  display: none;
-  /* Ascunde barele de scroll */
+  display: none; /* Ascunde barele de scroll */
 }
 
 html,
@@ -57,8 +56,7 @@ body {
 
 .tabs {
   display: flex;
-  flex-wrap: wrap;
-  /* Permite ca tab-urile să se aranjeze pe mai multe linii, dacă e necesar */
+  flex-wrap: wrap; /* Permite ca tab-urile să se aranjeze pe mai multe linii, dacă e necesar */
   justify-content: center;
   padding: 20px;
   position: absolute;
@@ -72,64 +70,17 @@ body {
 }
 
 .tabs button {
-  all: unset;
-  /* Resetează toate stilurile implicite */
-  display: flex;
-  /* Asigură centrare pentru conținut */
-  justify-content: center;
-  /* Centrează orizontal */
-  align-items: center;
-  /* Centrează vertical */
-  width: 110px;
-  /* Dimensiunea butonului */
+  all: unset; /* Resetează toate stilurile implicite */
+  display: flex; /* Asigură centrare pentru conținut */
+  justify-content: center; /* Centrează orizontal */
+  align-items: center; /* Centrează vertical */
+  width: 110px; /* Dimensiunea butonului */
   height: 110px;
-  border-radius: 50%;
-  /* Creează forma rotundă */
-  overflow: hidden;
-  /* Ascunde orice depășire a conținutului */
+  border-radius: 50%; /* Creează forma rotundă */
+  overflow: hidden; /* Ascunde orice depășire a conținutului */
   cursor: pointer;
-  position: relative;
-  /* Context pentru elementele poziționate în interior */
+  position: relative; /* Context pentru elementele poziționate în interior */
   transition: transform 0.3s ease;
-}
-
-.tabs button::after {
-  content: attr(data-text);
-  /* Textul afișat */
-  position: absolute;
-  /* Poziționat relativ la buton */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Centrează textul */
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  opacity: 0;
-  /* Ascuns implicit */
-  transition: opacity 0.3s ease;
-  /* Efect de tranziție */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.tabs button[data-text="Limbi vorbite"]::after {
-  white-space: pre-line;
-  /* Permite textului să treacă pe linii noi */
-  text-align: center;
-  /* Centrează textul pe orizontală */
-  line-height: 1.2;
-  /* Controlează spațierea între linii */
-}
-
-.tab-image {
-  width: 100%;
-  /* Face imaginea să ocupe întreaga lățime a butonului */
-  height: 100%;
-  /* Face imaginea să ocupe întreaga înălțime a butonului */
-  object-fit: cover;
-  /* Păstrează proporțiile imaginii */
-  border-radius: 50%;
-  /* Asigură că imaginea respectă forma rotundă */
 }
 
 .tabs button:hover {
@@ -137,26 +88,42 @@ body {
   font-size: small;
 }
 
-.tabs button.active {
-  color: white;
+.tabs button:hover::after {
+  opacity: 1;
 }
 
 .tabs button::after {
-  content: attr(data-text);
-  position: absolute;
+  content: attr(data-text); /* Textul afișat */
+  position: absolute; /* Poziționat relativ la buton */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%); /* Centrează textul */
+  color: white;
   font-weight: bold;
   font-size: 14px;
-  opacity: 0;
-  transition: opacity 1s ease;
-  text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9);
+  opacity: 0; /* Ascuns implicit */
+  transition: opacity 0.3s ease; /* Efect de tranziție */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.tabs button:hover::after {
-  opacity: 1;
+.tabs button[data-text="Limbi vorbite"]::after {
+  white-space: pre-line; /* Permite textului să treacă pe linii noi */
+  text-align: center; /* Centrează textul pe orizontală */
+  line-height: 1.2; /* Controlează spațierea între linii */
+}
+
+.tab-image {
+  width: 100%; /* Face imaginea să ocupe întreaga lățime a butonului */
+  height: 100%; /* Face imaginea să ocupe întreaga înălțime a butonului */
+  object-fit: cover; /* Păstrează proporțiile imaginii */
+  border-radius: 50%; /* Asigură că imaginea respectă forma rotundă */
+}
+
+.tabs button.active {
+  color: white;
+  text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9); /* Adaugă umbră textului */
+  transform: scale(1.1); /* Aplica un efect de mărire */
+  transition: transform 0.3s ease, color 0.3s ease; /* Asigură o tranziție lină */
 }
 
 .tabs button.active::after {
