@@ -14,8 +14,7 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  overflow: auto;
-  /* Permite scroll pe pagină */
+  overflow: auto; /* Permite scroll pe pagină */
 }
 
 .header {
@@ -38,11 +37,10 @@ body {
   align-items: flex-start;
   padding: 50px 20px;
   width: 100%;
-  height: calc(100vh - 200px);
-  /* Ajustează pentru header și footer */
+  min-height: calc(100vh - 200px); /* Ajustează pentru header și footer */
   box-sizing: border-box;
-  overflow-y: auto;
-  /* Permite scroll pe conținut */
+  overflow-y: auto; /* Permite scroll pe conținut */
+  margin-bottom: 100px; /* Adaugă un spațiu pentru a preveni suprapunerea cu footer-ul */
 }
 
 .content {
@@ -54,6 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  margin-bottom: 100px; /* Adaugă un spațiu sub content pentru a lăsa loc border-ului de jos */
 }
 
 .tabs {
