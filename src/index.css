@@ -135,6 +135,7 @@ body {
 
 .tabs button:hover {
   transform: scale(1.1);
+  font-size: small;
 }
 
 .tabs button.active {
@@ -185,7 +186,7 @@ body {
 
 .footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 10px;
   background: #333;
   color: #fff;
   position: fixed;
@@ -224,7 +225,7 @@ body {
 @media (max-width: 768px) {
   
   .header {
-    height: 20px; /* Adjust to make it narrower */
+    padding: 5px;
     transition: top 0.3s ease-in-out; /* Smooth hide/show transition */
   }
 
@@ -239,8 +240,10 @@ body {
   
   .content {
     width: 100%;
-    padding: 20px;
+    padding: 5px; /* Ajustăm padding-ul */
+    margin-bottom: 0; /* Eliminăm margin-ul de jos */
   }
+
   
   .main-content {
     align-items: center;
@@ -254,10 +257,8 @@ body {
     max-height: none;
     overflow: visible;
     padding: 10px;
-    flex-direction: row;
-    /* Tab-urile rămân pe orizontală */
-    justify-content: space-evenly;
-    /* Aliniem tab-urile orizontal, dar cu spațiu între ele */
+    flex-direction: row; /* Tab-urile rămân pe orizontală */
+    justify-content: space-evenly; /* Aliniem tab-urile orizontal, dar cu spațiu între ele */
   }
 
   /* General adjustments */
@@ -271,13 +272,12 @@ body {
   .footer .contact-and-social .contact-list {
     flex-direction: row; /* Menținem butoanele pe orizontală */
     justify-content: space-evenly; /* Distribuim uniform butoanele pe orizontală */
-    gap: 15px;
-    /* Spațiu mai mic între butoane */
+    gap: 15px; /* Spațiu mai mic între butoane */
+  
   }
 
   .footer {
-    height: 30px; /* Adjust to make it narrower */
-    padding: 10px 10px;
+    padding: 5px 5px;
     font-size: 12px;
   }
 }
@@ -287,7 +287,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: 0;
-    padding: 30px;
+    padding: 5px;
   }
 
   .tabs {
