@@ -201,7 +201,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
   /* Permite ca butoanele să treacă pe o linie următoare dacă nu sunt suficiente spațiu */
   flex-direction: row;
