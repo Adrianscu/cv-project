@@ -249,7 +249,7 @@ body {
   }
 
   .content {
-    width: 100%;
+    width: 95%;
     padding: 0 5px; /* Marginea conținutului aproape de marginea superioară */
     margin: 0; /* Eliminăm marginile */
     font-size: 12px; /* Text mai mic */
