@@ -233,11 +233,6 @@ body {
     transition: top 0.3s ease-in-out; /* Smooth hide/show transition */
   }
 
-  .hidden-header {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
   .header h1 {
     font-size: 18px;
     margin: 0; /* Elimină eventuale margini */

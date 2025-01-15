@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './components/style.css';
 import Header from './components/Header';
 import Certifications from './components/Certifications';
@@ -17,23 +17,6 @@ import ProjectsImage from './tabs_images/Projects.png';
 
 function App() {
   const [activeTab, setActiveTab] = useState('certifications');
-  const [isHeaderHidden, setHeaderHidden] = useState(false);
-
-  useEffect(() => {
-    let lastScroll = 0;
-    const handleScroll = () => {
-      const currentScroll = window.scrollY;
-      if (currentScroll > lastScroll && currentScroll > 50) {
-        setHeaderHidden(true);
-      } else {
-        setHeaderHidden(false);
-      }
-      lastScroll = currentScroll;
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
@@ -41,9 +24,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header className={isHeaderHidden ? 'hidden-header' : ''} />
+      <Header />
+
+      
       <div className="main-content">
         <div className="tabs">
+         
           <button
             onClick={() => handleTabClick('certifications')}
             className={activeTab === 'certifications' ? 'active' : ''}
@@ -51,6 +37,7 @@ function App() {
           >
             <img src={CertificationsImage} alt="Certifications" className="tab-image" />
           </button>
+
           <button
             onClick={() => handleTabClick('experience')}
             className={activeTab === 'experience' ? 'active' : ''}
@@ -58,6 +45,7 @@ function App() {
           >
             <img src={ExperienceImage} alt="Experience" className="tab-image" />
           </button>
+
           <button
             onClick={() => handleTabClick('skills')}
             className={activeTab === 'skills' ? 'active' : ''}
@@ -65,6 +53,7 @@ function App() {
           >
             <img src={SkillsImage} alt="Skills" className="tab-image" />
           </button>
+
           <button
             onClick={() => handleTabClick('education')}
             className={activeTab === 'education' ? 'active' : ''}
@@ -72,6 +61,7 @@ function App() {
           >
             <img src={EducationImage} alt="Education" className="tab-image" />
           </button>
+
           <button
             onClick={() => handleTabClick('languages')}
             className={activeTab === 'languages' ? 'active' : ''}
@@ -79,6 +69,7 @@ function App() {
           >
             <img src={LanguagesImage} alt="Languages" className="tab-image" />
           </button>
+
           <button
             onClick={() => handleTabClick('projects')}
             className={activeTab === 'projects' ? 'active' : ''}
@@ -87,15 +78,18 @@ function App() {
             <img src={ProjectsImage} alt="Projects" className="tab-image" />
           </button>
         </div>
+
+        {/* Contenutul tab-urilor */}
         <div className="content">
           {activeTab === 'certifications' && <Certifications />}
           {activeTab === 'experience' && <Experience />}
           {activeTab === 'skills' && <Skills />}
           {activeTab === 'education' && <Education />}
           {activeTab === 'languages' && <Languages />}
-          {activeTab === 'projects' && <Projects />}
+          {activeTab === 'projects' && <Projects/>}
         </div>
       </div>
+
       <Footer />
     </div>
   );
