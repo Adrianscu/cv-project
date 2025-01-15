@@ -1,6 +1,5 @@
 import React from 'react';
 import GitHub from '../logo_images/GitHub.png';
-import LinkGroup from '../logo_images/LinkGroup.png';
 
 function Proiecte() {
     return (

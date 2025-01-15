@@ -262,31 +262,79 @@ body {
 
 
 @media (min-width: 769px) and (max-width: 1360px) {
-  .main-content {
+  .header {
     display: flex;
-    flex-direction: row;
-    margin-left: 0;
-    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Ajustează padding-ul pentru ecrane mai mari */
+    margin-top: 0;
+    transition: top 0.3s ease-in-out; /* Smooth hide/show transition */
   }
 
-  .tabs {
-    position: static;
-    width: 230px;
-    padding: 20px;
-    justify-content: flex-start;
+  .header h1 {
+    font-size: 24px; /* Font mai mare pentru titlu */
+    margin: 0; /* Elimină eventuale margini */
   }
 
-  .tabs button {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+  h1 {
+    font-size: 16px; /* Font mai lizibil */
+    text-align: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asigură că pagina acoperă întreaga fereastră */
+    margin: 0;
   }
 
   .content {
-    width: 100%;
-    padding: 20px;
-    margin-left: 230px;
+    flex: 1; /* Face ca .content să se extindă pentru a ocupa spațiul rămas */
+    width: 90%; /* Ajustăm dimensiunea pentru a ocupa mai mult spațiu */
+    padding: 10px 20px; /* Marginea conținutului pentru lizibilitate */
+    margin: -50px auto; /* Centrare automată */
+    font-size: 12px; /* Font mai mare */
+    line-height: 1.3; /* Creștem spațierea pentru lizibilitate */
   }
+
+  .main-content {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px; /* Mai mult spațiu în jurul conținutului principal */
+    min-height: calc(100vh - 100px);
+  }
+
+  .section {
+    padding: 10px !important; /* Adăugăm padding */
+  }
+
+
+  .tabs {
+    position: static;
+    padding: 10px;
+    margin-top: -50px; /* Ridică tab-urile mai sus */
+    margin-left: 100px; /* Impinge tab-urile la dreapta */
+    flex-direction: row; /* Tab-urile rămân pe orizontală */
+    justify-content: space-around; /* Spațiere echilibrată între tab-uri */
+  }
+
+   /* General adjustments */
+   .tabs button {
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    text-indent: 0; /* Textul este vizibil */
+    font-size: 12px; /* Text mai lizibil */
+    border-radius: 50%;
+  }
+
+  .footer {
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px; /* Font mai mare pentru footer */
+    margin-top: 0;
+  }
+
 }
 
 /* Media Queries pentru rezoluție mare (1920x1080 și 2560x1080) */
