@@ -245,9 +245,8 @@ body {
 
   /* General adjustments */
   .tabs button {
-    width: 48px;
-    height: 48px;
-    padding: 3px;
+    width: 50px;
+    height: 50px;
     text-indent: -9999px;
     border: none; /* Elimină border-ul implicit */
     transition: border-color 0.3s ease; /* Tranziție smooth pentru border */
