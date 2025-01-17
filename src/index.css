@@ -384,15 +384,13 @@ body {
   }
 
   .tabs {
-    position: relative; /* Asigurăm că taburile nu se suprapun */
+    display: flex;
+    flex-wrap: wrap; /* Permite taburilor să treacă pe un rând nou dacă e necesar */
+    justify-content: flex-start; /* Aliniere corectă pe orizontală */
+    gap: 20px; /* Spațiere uniformă între taburi */
     padding: 10px;
-    margin-top: -50px; /* Ajustăm spațierea față de conținut */
-    margin-left: 50px; /* Centrare automată */
-    margin-right: auto;
-    display: flex; /* Ne asigurăm că taburile sunt pe orizontală */
-    flex-direction: row;
-    justify-content: space-between; /* Spațiu echilibrat între taburi */
-    width: 90%; /* Lățime mai mare pentru toate cele 6 taburi */
+    margin: 0 auto;
+    width: 90%; /* Ajustează lățimea pentru toate taburile */
   }
 
   .tabs button {
