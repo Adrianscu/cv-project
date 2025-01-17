@@ -317,7 +317,7 @@ body {
   .tabs {
     position: static;
     padding: 10px;
-    margin-top: -25px; /* Ridică tab-urile mai sus */
+    margin-top: -35px; /* Ridică tab-urile mai sus */
     margin-left: 100px; /* Impinge tab-urile la dreapta */
     flex-direction: row; /* Tab-urile rămân pe orizontală */
     justify-content: space-around; /* Spațiere echilibrată între tab-uri */
@@ -392,7 +392,7 @@ body {
   .tabs {
     position: static; /* Asigurăm că taburile nu se suprapun */
     padding: 10px;
-    margin-top: -45px; /* Ajustăm spațierea față de conținut */
+    margin-top: -40px; /* Ajustăm spațierea față de conținut */
     margin-left: 80px;
     flex-direction: row;
     justify-content: space-around; /* Spațiu echilibrat între taburi */
