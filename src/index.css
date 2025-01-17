@@ -384,22 +384,22 @@ body {
   }
 
   .tabs {
-    display: flex;
-    flex-wrap: wrap; /* Permite taburilor să treacă pe un rând nou dacă e necesar */
-    justify-content: flex-start; /* Aliniere corectă pe orizontală */
-    gap: 20px; /* Spațiere uniformă între taburi */
+    position: relative; /* Asigurăm că taburile nu se suprapun */
     padding: 10px;
-    margin: 0 auto;
-    width: 90%; /* Ajustează lățimea pentru toate taburile */
+    margin-top: -50px; /* Ajustăm spațierea față de conținut */
+    margin-left: 50px; /* Centrare automată */
+    margin-right: auto;
+    display: flex; /* Ne asigurăm că taburile sunt pe orizontală */
+    flex-direction: row;
+    justify-content: space-between; /* Spațiu echilibrat între taburi */
+    width: 90%; /* Lățime mai mare pentru toate cele 6 taburi */
   }
 
   .tabs button {
-    width: 100px; /* Creștem dimensiunea pentru rezoluții mari */
-    height: 100px;
+    width: 90px; /* Creștem dimensiunea pentru rezoluții mari */
+    height: 90px;
     padding: 0px;
-    text-indent: 0;
     font-size: 14px;
-    border-radius: 50%;
     transition: transform 0.3s ease-in-out;
   }
 
