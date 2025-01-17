@@ -384,27 +384,22 @@ body {
   }
 
   .tabs {
-    position: relative; /* Asigurăm că taburile nu se suprapun */
+    position: static; /* Asigurăm că taburile nu se suprapun */
     padding: 10px;
     margin-top: -50px; /* Ajustăm spațierea față de conținut */
-    margin-left: 50px; /* Centrare automată */
-    margin-right: auto;
-    display: flex; /* Ne asigurăm că taburile sunt pe orizontală */
+    margin-left: 80px;
     flex-direction: row;
-    justify-content: space-between; /* Spațiu echilibrat între taburi */
-    width: 90%; /* Lățime mai mare pentru toate cele 6 taburi */
+    justify-content: space-around; /* Spațiu echilibrat între taburi */
+  
   }
 
   .tabs button {
-    width: 90px; /* Creștem dimensiunea pentru rezoluții mari */
-    height: 90px;
+    width: 85px; /* Creștem dimensiunea pentru rezoluții mari */
+    height: 85px;
     padding: 0px;
+    text-indent: 0; /* Textul este vizibil */
     font-size: 14px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .tabs button:hover {
-    transform: scale(1.1); /* Efect de hover pentru claritate */
+    border-radius: 50%;
   }
 
   .footer {
