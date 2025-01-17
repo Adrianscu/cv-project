@@ -13,7 +13,6 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  overflow: auto; /* Permite scroll pe pagină */
 }
 
 .header {
@@ -21,12 +20,13 @@ body {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  position: relative; /* Asigură-te că header-ul nu interferează cu alte elemente */
 }
 
 .header h1 {
   font-size: 36px;
   color: #fff;
-  margin: 0;
+  
 }
 
 .main-content {
@@ -34,24 +34,23 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 50px 20px;
+  padding: 20px;
   width: 100%;
-  min-height: calc(100vh - 200px); /* Ajustează pentru header și footer */
+  min-height: calc(100vh - 120px); /* Ajustează pentru header și footer */
   box-sizing: border-box;
-  overflow-y: auto; /* Permite scroll pe conținut */
-  margin-bottom: 100px; /* Adaugă un spațiu pentru a preveni suprapunerea cu footer-ul */
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   width: 80%;
+  justify-content: flex-start;
   padding: 20px;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  margin-bottom: 100px; /* Adaugă un spațiu sub content pentru a lăsa loc border-ului de jos */
+  margin-top: 20px; /* Împinge contentul imediat sub header */
+
 }
 
 .tabs {
@@ -298,9 +297,10 @@ body {
     flex: 1; /* Face ca .content să se extindă pentru a ocupa spațiul rămas */
     width: 90%; /* Ajustăm dimensiunea pentru a ocupa mai mult spațiu */
     padding: 10px 20px; /* Marginea conținutului pentru lizibilitate */
-    margin: -100px auto; /* Centrare automată */
+    margin: auto; /* Centrare automată */
     font-size: 12px; /* Font mai mare */
     line-height: 1.3; /* Creștem spațierea pentru lizibilitate */
+
   }
 
   .main-content {
@@ -373,7 +373,7 @@ body {
     flex: 1;
     width: 100%; /* Ajustare pentru a acomoda spațiul taburilor */
     padding: 10px 20px; /* Marginea conținutului pentru lizibilitate */
-    margin: -100px auto; /* Centrare automată */
+    margin: auto; /* Centrare automată */
     font-size: 14px;
     line-height: 1.5;
   }
@@ -415,6 +415,77 @@ body {
   }
 }
 
+@media (min-width: 1961px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 0;
+    transition: top 0.3s ease-in-out;
+  }
+
+  .header h1 {
+    font-size: 32px; /* Font și mai mare pentru titlu pe ecrane mari */
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .content {
+    flex: 1;
+    width: 100%;
+    padding: 10px 40px; /* Ajustează marginea conținutului pentru un aspect mai aerisit */
+    margin-top: -35px; /* Ridică conținutul mai sus pe ecranele mari */
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .main-content {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    min-height: calc(100vh - 100px);
+  }
+
+  .section {
+    padding: 30px !important;
+  }
+
+  .tabs {
+    position: static;
+    padding: 15px;
+    margin-top: -50px; /* Ridică și tab-urile mai sus */
+    margin-left: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .tabs button {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  .footer {
+    justify-content: center;
+    padding: 20px 40px;
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
 
 @media (min-width: 1024px) {
 
