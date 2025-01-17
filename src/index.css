@@ -18,7 +18,7 @@ body {
 .header {
   background: #333;
   color: #fff;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
   position: relative; /* Asigură-te că header-ul nu interferează cu alte elemente */
 }
@@ -27,6 +27,20 @@ body {
   font-size: 36px;
   color: #fff;
   margin: 0;
+}
+
+h1 {
+  margin-top: -50px;
+}
+
+.content {
+  position: relative; /* Permite repoziționarea cu top, left, etc. */
+  top: 0px; /* Mută elementul în sus cu 10px */
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .main-content {
@@ -38,19 +52,6 @@ body {
   width: 100%;
   min-height: calc(100vh - 120px); /* Ajustează pentru header și footer */
   box-sizing: border-box;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  justify-content: flex-start;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-top: 20px; /* Împinge contentul imediat sub header */
-
 }
 
 .tabs {
@@ -420,7 +421,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     margin-top: 0;
     transition: top 0.3s ease-in-out;
   }
