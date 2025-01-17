@@ -74,12 +74,14 @@ body {
   display: flex; /* Asigură centrare pentru conținut */
   justify-content: center; /* Centrează orizontal */
   align-items: center; /* Centrează vertical */
-  width: 110px; /* Dimensiunea butonului */
-  height: 110px;
+  width: 105px; /* Dimensiunea butonului */
+  height: 105px;
+  padding: 3px;
   border-radius: 50%; /* Creează forma rotundă */
   overflow: hidden; /* Ascunde orice depășire a conținutului */
   cursor: pointer;
   position: relative; /* Context pentru elementele poziționate în interior */
+  transition: transform 0.3s ease, border 0.3s ease; /* Asigură o tranziție lină și pentru border */
   transition: transform 0.3s ease;
 }
 
@@ -248,14 +250,6 @@ body {
     width: 50px;
     height: 50px;
     text-indent: -9999px;
-    border: none; /* Elimină border-ul implicit */
-    transition: border-color 0.3s ease; /* Tranziție smooth pentru border */
-  }
-
-  .tabs button.active {
-    border: 2px solid #007bff; /* Setează culoarea dorită */
-    border-radius: 50px; /* Ajustează colțurile dacă este necesar */
-    background-color: #f0f8ff; /* Opțional, un fundal diferit pentru cel activ */
   }
 
   .footer {
