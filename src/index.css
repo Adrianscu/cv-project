@@ -76,12 +76,12 @@ body {
   align-items: center; /* Centrează vertical */
   width: 105px; /* Dimensiunea butonului */
   height: 105px;
-  padding: 3px;
+  padding: 2px;
   border-radius: 50%; /* Creează forma rotundă */
   overflow: hidden; /* Ascunde orice depășire a conținutului */
   cursor: pointer;
   position: relative; /* Context pentru elementele poziționate în interior */
-  transition: transform 0.3s ease, border 0.3s ease; /* Asigură o tranziție lină și pentru border */
+  border: 3px solid transparent;
   transition: transform 0.3s ease;
 }
 
@@ -327,7 +327,6 @@ body {
    .tabs button {
     width: 80px;
     height: 80px;
-    padding: 0px;
     text-indent: 0; /* Textul este vizibil */
     font-size: 12px; /* Text mai lizibil */
     border-radius: 50%;
@@ -403,7 +402,6 @@ body {
   .tabs button {
     width: 85px; /* Creștem dimensiunea pentru rezoluții mari */
     height: 85px;
-    padding: 0px;
     text-indent: 0; /* Textul este vizibil */
     font-size: 14px;
     border-radius: 50%;
