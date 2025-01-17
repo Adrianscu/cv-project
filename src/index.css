@@ -215,6 +215,7 @@ h1 {
   h1 {
     font-size: 11px;
     text-align: center;
+    margin-top: 0px;
   }
 
   .content {
