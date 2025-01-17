@@ -317,7 +317,7 @@ body {
   .tabs {
     position: static;
     padding: 10px;
-    margin-top: -40px; /* Ridică tab-urile mai sus */
+    margin-top: -25px; /* Ridică tab-urile mai sus */
     margin-left: 100px; /* Impinge tab-urile la dreapta */
     flex-direction: row; /* Tab-urile rămân pe orizontală */
     justify-content: space-around; /* Spațiere echilibrată între tab-uri */
@@ -325,10 +325,10 @@ body {
 
    /* General adjustments */
    .tabs button {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     text-indent: 0; /* Textul este vizibil */
-    font-size: 12px; /* Text mai lizibil */
+    font-size: 10px; /* Text mai lizibil */
     border-radius: 50%;
   }
 
@@ -400,8 +400,8 @@ body {
   }
 
   .tabs button {
-    width: 75px; /* Creștem dimensiunea pentru rezoluții mari */
-    height: 75px;
+    width: 80px; /* Creștem dimensiunea pentru rezoluții mari */
+    height: 80px;
     text-indent: 0; /* Textul este vizibil */
     font-size: 14px;
     border-radius: 50%;
