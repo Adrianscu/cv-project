@@ -58,7 +58,7 @@ body {
   display: flex;
   flex-wrap: wrap; /* Permite ca tab-urile să se aranjeze pe mai multe linii, dacă e necesar */
   justify-content: center;
-  padding: 20px;
+  padding: 10px 20px;
   position: absolute;
   top: 75px;
   left: 0;
