@@ -411,7 +411,7 @@ body {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1361px) {
 
   /* Stile pentru ecranele mari (desktop) */
   .main-content {
@@ -420,7 +420,7 @@ body {
     /* Menține layout-ul pe orizontală */
     width: 100%;
     position: relative;
-    max-width: 1024px;
+    max-width: 1361px;
     margin: auto;
     padding: 50px;
   }
