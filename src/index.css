@@ -400,8 +400,8 @@ body {
   }
 
   .tabs button {
-    width: 85px; /* Creștem dimensiunea pentru rezoluții mari */
-    height: 85px;
+    width: 75px; /* Creștem dimensiunea pentru rezoluții mari */
+    height: 75px;
     text-indent: 0; /* Textul este vizibil */
     font-size: 14px;
     border-radius: 50%;
