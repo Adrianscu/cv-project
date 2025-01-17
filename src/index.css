@@ -60,7 +60,7 @@ body {
   justify-content: center;
   padding: 10px 20px;
   position: absolute;
-  top: 75px;
+  top: 50px;
   left: 0;
   width: 250px;
   box-sizing: border-box;
@@ -86,6 +86,9 @@ body {
 .tabs button:hover {
   transform: scale(1.1);
   font-size: small;
+  border: 3px solid #007bff; /* Culoare și grosime border */
+  border-radius: 50%; /* Rotunjirea colțurilor pentru a respecta forma circulară */
+  background-color: #f0f8ff; /* Fundal diferit pentru butonul activ */
 }
 
 .tabs button:hover::after {
@@ -124,6 +127,9 @@ body {
   text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9); /* Adaugă umbră textului */
   transform: scale(1.1); /* Aplica un efect de mărire */
   transition: transform 0.3s ease, color 0.3s ease; /* Asigură o tranziție lină */
+  border: 3px solid #007bff; /* Culoare și grosime border */
+  border-radius: 50%; /* Rotunjirea colțurilor pentru a respecta forma circulară */
+  background-color: #f0f8ff; /* Fundal diferit pentru butonul activ */
 }
 
 .tabs button.active::after {
@@ -318,7 +324,7 @@ body {
   .tabs {
     position: static;
     padding: 10px;
-    margin-top: -60px; /* Ridică tab-urile mai sus */
+    margin-top: -40px; /* Ridică tab-urile mai sus */
     margin-left: 100px; /* Impinge tab-urile la dreapta */
     flex-direction: row; /* Tab-urile rămân pe orizontală */
     justify-content: space-around; /* Spațiere echilibrată între tab-uri */
