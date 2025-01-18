@@ -219,7 +219,7 @@ h1 {
 
   .content {
     width: 95%;
-    padding: 0px 5px; /* Marginea conținutului aproape de marginea superioară */
+    padding: 5px; /* Marginea conținutului aproape de marginea superioară */
     margin-top: 0; /* Eliminăm marginile */
     margin-bottom: 50px;
     font-size: 8px; /* Text mai mic */
