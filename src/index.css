@@ -222,7 +222,7 @@ h1 {
     width: 95%;
     padding: 0px 5px; /* Marginea conținutului aproape de marginea superioară */
     margin-top: 0; /* Eliminăm marginile */
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     font-size: 8px; /* Text mai mic */
     line-height: 1;
   }
