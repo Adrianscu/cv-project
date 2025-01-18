@@ -221,7 +221,8 @@ h1 {
   .content {
     width: 95%;
     padding: 0px 5px; /* Marginea conținutului aproape de marginea superioară */
-    margin: 0; /* Eliminăm marginile */
+    margin-top: 0; /* Eliminăm marginile */
+    margin-bottom: 15px;
     font-size: 8px; /* Text mai mic */
     line-height: 1;
   }
@@ -229,7 +230,7 @@ h1 {
   .main-content {
     align-items: center;
     flex-direction: column;
-    padding: 0px;
+    padding: 15px;
   }
 
   .section {
