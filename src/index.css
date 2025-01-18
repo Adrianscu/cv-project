@@ -208,12 +208,11 @@ h1 {
   }
 
   .header h1 {
-    font-size: 16px;
-    margin: 0; /* Elimină eventuale margini */
+    font-size: 18px;
   }
   
-  h1 {
-    font-size: 8px;
+  h1:not(.header h1) {
+    font-size: 24px;
     text-align: center;
     margin-top: 0px;
   }
