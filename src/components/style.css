@@ -28,12 +28,11 @@ h3 {
     cursor: pointer;
     margin-top: 10px;
     color: #333;
-    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 h3:hover {
     font-size: 1.3rem;
-    color: rgb(150, 150, 150); /* Culoare accentuată */
+    color: #007bff; /* Culoare accentuată */
 }
 
 /* Liste */

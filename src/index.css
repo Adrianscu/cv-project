@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  background: #333;
+  background: #007bff;
   color: #fff;
   padding: 30px 0;
   text-align: center;
@@ -25,7 +25,7 @@ body {
 
 .header h1 {
   font-size: 36px;
-  color: #fff;
+  color: #000000;
   margin: 0;
 }
 
@@ -38,7 +38,6 @@ h1 {
   top: 0px; /* Mută elementul în sus cu 10px */
   display: flex;
   flex-direction: column;
-  background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -52,6 +51,7 @@ h1 {
   width: 100%;
   min-height: calc(100vh - 120px); /* Ajustează pentru header și footer */
   box-sizing: border-box;
+  transition: color 0.3s ease;  /* Schimbă doar culoarea, fără mișcare */
 }
 
 .tabs {
@@ -161,7 +161,7 @@ h1 {
 .footer {
   text-align: center;
   padding: 10px 10px;
-  background: #333;
+  background: #007bff;
   color: #fff;
   position: fixed;
   bottom: 0;

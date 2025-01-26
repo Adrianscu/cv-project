@@ -40,7 +40,7 @@ function Certifications() {
                                 marginLeft: '10px',
                                 cursor: 'pointer',
                                 verticalAlign: 'middle',  // Asigură alinierea pe verticală
-                                transition: 'transform 0.3s ease',
+                                transition: 'transform 0.3s ease',  // Doar transformările fac tranziție
                             }}
                             onMouseEnter={(e) => e.target.style.transform = 'scale(1.3)'}  // Aplicați scalarea la hover
                             onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}  // Reveniți la dimensiunea normală
