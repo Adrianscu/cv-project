@@ -1,0 +1,57 @@
+/* Reset general pentru fonturi și culoare */
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333; /* Culoare standard pentru text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Stiluri pentru secțiuni */
+.section {
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+/* Stiluri pentru anteturi */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #333;
+}
+
+h3:hover {
+    color: #007bff; /* Culoare accentuată */
+}
+
+/* Liste */
+ul {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+ul li {
+    list-style-type: disc;
+    margin: 5px 0;
+    margin-top: 10px;
+}
+
+ul ul {
+    margin-left: 20px;
+}
+
+/* Font personalizat */
+.custom-font-size {
+    font-size: 1rem;
+    margin-left: 10px;
+}
